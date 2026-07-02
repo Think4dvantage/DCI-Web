@@ -1,0 +1,31 @@
+# DCI-Web — see .ai/instructions/07-continuity.md
+# Repo is PUBLIC: never commit secrets or personal data.
+
+# Legacy WordPress export — contains personal data (author/commenter emails, members).
+# Keep private, never commit. (Migration reads it from a local copy.)
+old page/
+*.WordPress.*.xml
+
+# Secrets / config
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+config.yml
+secrets/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Build / deps (as sub-services get added)
+node_modules/
+dist/
+build/
+__pycache__/
+*.pyc
+.venv/
